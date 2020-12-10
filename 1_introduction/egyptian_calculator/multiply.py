@@ -11,7 +11,7 @@ class Multiply:
                 c = power_of_two
         return c
 
-    def calculate(self):
+    def beta_calculator(self):
         x = self.closest_number(self.num_b)
 
         while x < self.num_b:
@@ -21,16 +21,18 @@ class Multiply:
 
         return x * self.num_a
 
-    def cal(self):
+    def egypt_calculator(self):
         x = self.closest_number(self.num_b)
-        list_a = [x]
+        h = x * self.num_a
+        list_b = [h]
         while x < self.num_b:
             n = self.num_b - x
             m = self.closest_number(n)
             x += m
-            list_a.append(m)
+            k = m * self.num_a
+            list_b.append(k)
 
-        return list_a
+        return list_b
 
 
 
