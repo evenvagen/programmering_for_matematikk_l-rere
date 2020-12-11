@@ -25,3 +25,13 @@ class TestMultiply(TestCase):
         self.assertEqual(numbers, [5760, 2880, 1440, 720, 360, 180, 90])
         self.assertEqual(sum_of_nums, 11430)
 
+    def test_challenge_1_3(self):
+        calc = Multiply(28, 14)
+        numbers = calc.egypt_calculator()
+        self.assertEqual(numbers, [224, 112, 56])
+
+    def test_reverse_challenge_1_3(self):
+        calc = Multiply(14, 28)
+        numbers = calc.egypt_calculator()
+        self.assertEqual(numbers, [224, 112, 56])
+
