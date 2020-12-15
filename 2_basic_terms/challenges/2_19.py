@@ -2,7 +2,7 @@ import math
 
 a = float(input("Hva er arealoverflaten på kula? "))
 
-r = math.sqrt(a / 4 * math.pi)
+r = math.sqrt(a / (4 * math.pi))
 
 v1 = (1/3) * 4 * math.pi * r ** 2 * r
 

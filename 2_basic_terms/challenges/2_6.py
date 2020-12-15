@@ -1,5 +1,5 @@
 side_length = float(input("Hva er lengden på den ene siden i kvadratet? "))
 
-result = side_length * 4
+area = int(side_length ** 2)
 
-print(result)
+print(area)
